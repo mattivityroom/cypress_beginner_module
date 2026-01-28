@@ -1,7 +1,7 @@
 describe('template test', () => {
     it('Visits the Kitchen Sink', () => {
         // Arrange
-        cy.visit('https://example.cypress.io')
+        cy.visit('')
         cy.contains('type')
             .click()
 
