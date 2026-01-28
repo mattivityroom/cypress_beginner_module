@@ -2,9 +2,9 @@ describe('day 3 - Handling Asynchronous Behavior', () => {
     it ('async wait for add to cart', () => {
         cy.visit('https://sauce-demo.myshopify.com/products/bronze-sandals')
 
-        // ❌ It will not click the button
+        // ❌ It can click the button, but not a good practice
         // const btn = cy.get('.add-to-cart')
-        // btn.click
+        // btn.click()
 
         cy.intercept('POST', '/cart/add.js').as('addToCart');
         cy.get('.add-to-cart').should('be.enabled')
