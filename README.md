@@ -1,3 +1,4 @@
+
 ### Installation Cypress
 ```
 npm install cypress --save-dev
@@ -13,3 +14,4 @@ npx cypress open
 npx cypress run [folder_path / script]
 ```
 details: https://docs.cypress.io/app/references/command-line#cypress-run-browser-lt-browser-name-or-path-gt
+trello: 
